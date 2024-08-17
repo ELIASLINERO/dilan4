@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f0ff; /* Color de fondo más suave */
+    color: #333;
+}
+
+header {
+    background-color: #004080; /* Cambié a un azul oscuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #0059b3; /* Azul medio para el menú de navegación */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    animation: slideDown 0.5s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s; /* Animación al pasar el ratón */
+}
+
+nav ul li:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    color: #004080; /* Azul oscuro para los títulos */
+    margin-top: 0;
+}
+
+h3 {
+    color: #336699; /* Azul medio para los subtítulos */
+}
+
+p, ul {
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #007acc; /* Azul vibrante para enlaces */
+    text-decoration: none;
+    transition: color 0.3s; /* Suaviza el cambio de color */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0059b3; /* Cambio de color en hover */
+}
+
+form {
+    background-color: #f0f8ff; /* Fondo claro para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Animación para el borde */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #007acc; /* Cambia el color del borde en focus */
+}
+
+form input[type="submit"] {
+    background-color: #004080; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0059b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080; 
+    color: #fff;
+    margin-top: 20px;
+    border-top: 1px solid #0059b3;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
